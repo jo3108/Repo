@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: workflow-service
+  webflux:
+    base-path: /workflow
+
+server:
+  port: 8082
+
+#mongodb:
+#  urlPrefix: "mongodb://"
+#  primary:
+#    name: "workflow"
+#    host: "mongodb://localhost:27017/"
+
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/test
+
