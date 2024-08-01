@@ -26,10 +26,10 @@ public class ItemLifeCycleController {
     }
 
 
-   /* @PutMapping("/{itemid}")
+    @PutMapping("/{itemid}")
     @ResponseStatus(HttpStatus.OK)
     public Mono<ResponseEntity<ItemLifeCycleUpdateResponse>> update(@PathVariable String itemId, @RequestBody ItemLifeCycleUpdateRequest itemLifeCycleUpdateRequest){
         return itemLifeCycleService.update(itemId, ItemLifeCycleStatus.from(itemLifeCycleUpdateRequest.getItemLifeCycleStatus()))
                 .map(itemLifeCycleUpdateResponse -> new ResponseEntity<>(itemLifeCycleUpdateResponse, HttpStatus.OK));
-    }*/
+    }
 }
